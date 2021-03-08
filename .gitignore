@@ -1,3 +1,2 @@
 node_modules/
-latest.csv
-out.csv
+*.csv
