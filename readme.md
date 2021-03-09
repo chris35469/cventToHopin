@@ -16,3 +16,8 @@
 `node index.js latest.csv out.csv`
 
 ### Formatted information will be in out.csv file.
+
+
+## 
+Alternative latest methods
+`node diff_check.js old.csv(old file) latest_conf.csv(new file) full_conf_3_8_7_57.csv(output file)` 
