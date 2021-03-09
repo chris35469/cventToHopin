@@ -19,5 +19,5 @@
 
 
 ## 
-Alternative latest methods
+Alternative latest method
 `node diff_check.js old.csv(old file) latest_conf.csv(new file) full_conf_3_8_7_57.csv(output file)` 
