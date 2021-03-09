@@ -50,9 +50,7 @@ let readNewFile = () => {
       }
     },
     () => {
-      //console.log(out);
       write(out);
-      //console.log(`Saved ${path}`);
     }
   );
 };
@@ -63,22 +61,10 @@ let main = () => {
     oldFile,
     (data) => {
       let email = Object.values(data)[0];
-      /*
-      let name = Object.values(data)[0].split(",");
-      let head = Object.values(data)[3] + " at " + Object.values(data)[2];
-      let row = {
-        Email: email,
-        FirstName: name[1],
-        LastName: name[0],
-        Headline: head,
-      };*/
       old_array.push(email);
     },
     () => {
       readNewFile();
-      //console.log(out);
-      //write(out);
-      //console.log(`Saved ${path}`);
     }
   );
 };
@@ -96,15 +82,5 @@ if (process.argv.length < 4) {
     header: ["Email", "FirstName", "LastName", "Headline"],
   });
 
-  /*
-  inputFile = process.argv[2];
-  outputFile = process.argv[3];
-  const start = Date.now();
-  path = start + "_" + outputFile;
-  csvWriter = createCsvWriter({
-    path: path,
-    header: ["Email", "FirstName", "LastName", "Headline"],
-  });
-  */
   main();
 }
